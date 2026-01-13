@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: todo-backend
+Version: 1.0.0
+Summary: A todo app backend with update management
+Author: Todo App Team
+Author-email: team@todoapp.com
+Requires-Python: >=3.7
+Requires-Dist: fastapi==0.104.1
+Requires-Dist: sqlmodel==0.0.8
+Requires-Dist: pydantic==2.5.0
+Requires-Dist: pydantic-settings==2.1.0
+Requires-Dist: uvicorn[standard]==0.24.0
+Requires-Dist: psycopg2-binary==2.9.9
+Requires-Dist: python-jose[cryptography]==3.3.0
+Requires-Dist: passlib[bcrypt]==1.7.4
+Requires-Dist: python-multipart==0.0.6
+Requires-Dist: alembic==1.13.1
+Requires-Dist: sqlalchemy==2.0.23
+Requires-Dist: asyncpg==0.29.0
+Requires-Dist: pytest==7.4.3
+Requires-Dist: pytest-asyncio==0.21.1
+Requires-Dist: httpx==0.25.2
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
