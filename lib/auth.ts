@@ -1,4 +1,4 @@
-import { createAuthClient, signIn, signOut } from "better-auth/react";
+import { createAuthClient } from "better-auth/react";
 
 // Initialize Better Auth client
 export const authClient = createAuthClient({
@@ -9,7 +9,8 @@ export const authClient = createAuthClient({
 });
 
 // Export signIn and signOut functions to be used in the app
-export { signIn, signOut };
+export const signIn = authClient.signIn;
+export const signOut = authClient.signOut;
 
 // Function to get the current user's session
 export const getCurrentUser = async () => {
