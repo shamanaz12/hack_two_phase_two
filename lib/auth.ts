@@ -1,7 +1,7 @@
-import { auth, signIn, signOut } from "better-auth/react";
+import { createAuthClient, signIn, signOut } from "better-auth/react";
 
 // Initialize Better Auth client
-export const betterAuth = auth({
+export const authClient = createAuthClient({
   baseURL: process.env.NEXT_PUBLIC_BETTER_AUTH_URL || "http://localhost:3000",
   fetchOptions: {
     cache: "no-store",
